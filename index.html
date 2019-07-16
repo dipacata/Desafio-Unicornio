@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Desafío Unicornio</title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="section-left">
+      <div class="section-header-left">
+        <figure>
+          <img src="images/unicorn.png" alt="">
+        </figure>
+      </div>
+      <div class="section-hero-left">
+      </div>
+      <div class="section-knowledge-left">
+        <div class="section-knowledge-social">
+          <figure>
+            <img src="images/instagram.png" alt="">
+          </figure>
+          <figure>
+            <img src="images/twitter.png" alt="">
+          </figure>
+          <figure>
+            <img src="images/youtube.png" alt="">
+          </figure>
+          <figure>
+            <img src="images/whatsapp.png" alt="">
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="section-right">
+      <header class="header">
+        <i class="icon-menu burger-button" id="burger-menu"></i>
+        <div class="section-header-right">
+          <nav class="menu">
+            <ol>
+              <li>
+                <a href="#">Inicio</a>
+              </li>
+              <li>
+                <a href="#sobremi">Sobre mí</a>
+              </li>
+              <li>
+                <a href="#portafolio">Portafolio</a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </header>
+      <section class="hero">
+        <div class="section-hero-right">
+          <div class="section-hero-content">
+            <div class="section-hero-title">
+              <h1>Unicornio Web Profesional</h1>
+            </div>
+            <figure class="section-hero-image">
+              <img src="images/image.png" alt="">
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="knowledge">
+        <div class="section-knowledge-right">
+          <div class="section-knowledge-content">
+            <div class="section-knowledge-desc">
+              <article class="project-dev">
+                <figure class="project-dev-imageContainer">
+                  <img class="project-dev-image" src="images/development.png" alt="">
+                </figure>
+                <div class="project-dev-details">
+                  <h2 class="project-dev-title">Desarrollo Web</h2>
+                  <p class="project-dev-description">HTML + CSS + Responsive Design</p>
+                </div>
+              </article>
+              <article class="project-design">
+                <figure class="project-design-imageContainer">
+                  <img class="project-design-image" src="images/design.png" alt="">
+                </figure>
+                <div class="project-design-details">
+                  <h2 class="project-design-title">Diseño Web</h2>
+                  <p class="project-design-description">UI/UX + Adobe XD/Figma + Zeplin</p>
+                </div>
+              </article>
+            </div>
+            <figure class="section-knowledge-image">
+                <img src="images/rocket.png" alt="">
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section id="sobremi" class="about-me">
+          <div class="section-about-me-right">
+            <div class="section-about-me-content">
+              <h2>Sobre mí</h2>
+              <p class="about-me-desc">
+                Aquí puedes escribir algo sobre tí, lo que te gusta y lo que no. Los lugares que quieres conocer o la comida que más disfrutas, incluso puedes hablar de tus mascotas.</br>
+                <span style="font-weight:bold"> &nbsp;&nbsp;&nbsp;&nbsp;-¿Dónde quieres trabajar?</span>
+              </p>
+            </div>
+          </div>  
+      </section>
+      <section id="portafolio" class="portfolio">
+        <div class="section-portfolio-right">
+          <div class="section-portfolio-content">
+            <h2>Proyectos</h2>
+            <div class="section-portfolio-projects">
+              <figure class="section-portfolio-image">
+                <img src="images/project1.png" alt="" width="304">
+              </figure>
+              <figure class="section-portfolio-image">
+                <img src="images/project2.png" alt="">
+              </figure>
+            </div>
+          </div>
+          <div class="final-bar">
+          </div>
+        </div>  
+      </section>
+    </div>
+  </div>
+  <script>
+      const ipad = window.matchMedia('screen and (max-width:480px)');
+      const menu = document.querySelector('.menu');
+      const burgerButton = document.querySelector('#burger-menu');
+  
+      ipad.addListener(validation);
+  
+      function validation(event) {
+        if (event.matches) {
+          burgerButton.addEventListener('click', hideShow)
+        } else {
+          burgerButton.removeEventListener('click', hideShow)
+        }
+      }
+      validation(ipad);
+  
+      function hideShow(){
+        if(menu.classList.contains('is-active')){
+          menu.classList.remove('is-active');
+        }
+        else{
+          menu.classList.add('is-active');
+        }
+      }
+    </script>
+</body>
+</html>

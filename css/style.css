@@ -1,0 +1,641 @@
+/*azul letra #1a1a4c*/
+/*azul parrafo #6d7496*/
+/*rojo cuadrado #e92042*/
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?bqb2fe');
+  src:  url('../fonts/icomoon.eot?bqb2fe#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?bqb2fe') format('truetype'),
+    url('../fonts/icomoon.woff?bqb2fe') format('woff'),
+    url('../fonts/icomoon.svg?bqb2fe#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e900";
+}
+
+body{
+  font-family: 'Dosis', sans-serif;
+  margin: 0px;
+  color:#1a1a4c;
+}
+
+.container{
+  display: flex;
+}
+
+.section-left{
+  width: 15%;
+  box-shadow: 2px 4px 5px 0px #d1d9e4;
+  height: 650px;
+}
+
+.section-right{
+  width: 85%;
+  display: block;
+}
+
+.section-header-left, .section-hero-left, .section-knowledge-left,
+.section-about-me-left, .section-portfolio-left {
+  /*width: 10%;*/
+  /*border: 2px solid black;*/
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+}
+
+/*.section-header-left img{
+  padding: 20px 20px 0px 20px;
+}*/
+.burger-button{
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  background: rgba(	26, 26, 76, 0.8);
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+
+  line-height: 10vw;
+  text-align: center;
+  display: none;
+  position: fixed;
+  z-index: 4;
+  /* left: 5px;
+  top: 5px; */
+  color: #e92042;
+  font-size: 5vw;
+}
+
+.section-header-right{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.section-hero-right, .section-knowledge-right,
+.section-about-me-right, .section-portfolio-right{
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+
+.header {
+  /*background-color: white;*/
+  display: flex;
+  width: 100%;
+  /*position: fixed;
+  z-index: 100;*/
+  height: 85px;
+}
+
+.section-header-left{
+  height: 85px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.section-header-left figure{
+  margin: 0;
+  text-align: center;
+}
+
+.section-header-left img{
+  width: 90%;
+}
+
+.section-hero-left{
+  height: 200px;
+}
+
+.section-knowledge-left{
+  /*box-shadow: 2px -2px 4px 0px #d1d9e4;*/
+  /*box-shadow: 5px 5px 25px #222 inset;*/
+  /*border-right: 2px solid black;
+  border-bottom: 2px solid black;*/
+  height: 365px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-header-left, .section-hero-left {
+  /*box-shadow: 2px -2px 4px 0px #d1d9e4;*/
+  /*box-shadow:0 1px 4px rgba(92, 196, 8, 0.3), 0 0 40px rgba(221, 41, 41, 0.5) inset;*/
+  /*border: 2px solid white;*/
+ /* border-right: 2px solid black;*/
+}
+
+
+
+.header ol{
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  padding: 0px;
+  margin: 0px;
+}
+
+.header a {
+  text-decoration: none;
+  display: flex;
+  height: inherit;
+  font-weight: 600;
+  color:#1a1a4c;
+}
+
+.header li{
+  margin: 0px 25px 0px 25px;
+}
+
+.menu{
+  width: 100%;
+}
+
+.menu.is-active{
+  left: 15%;
+}
+
+.hero{
+  display: flex;
+  height: 200px;
+}
+
+.hero h1{
+  font-size: 58px;
+  font-weight: bold;
+  margin: 0 10% 0 20%;
+  line-height: 68px;
+}
+
+.section-hero-right{
+  box-shadow: 3px 7px 5px -1px #d1d9e4;
+}
+.section-hero-content{
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+
+.section-hero-title{
+  width: 58%;
+}
+
+.section-hero-image{
+  border-radius: 10px;
+  background-color: #e92042;
+  box-shadow: 2px 4px 8px 3px #e2e6e6;
+  width: 25vw;
+  height: 25vw;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 58%;
+  top: 20%;
+  margin: 0;
+}
+
+.section-hero-image img{
+  width: 30%;
+}
+
+/* .section-hero-content figure{
+  margin: 0px;
+} */
+
+.knowledge{
+  display: flex;
+  height: 365px;
+  /*border:1px solid black;*/
+}
+
+.section-knowledge-social{
+  display:block;
+}
+
+.section-knowledge-social figure{
+  margin: 30px;
+  /*justify-content: center;
+  display: flex;*/
+}
+
+.section-knowledge-content{
+  display: flex;
+  height: 100%;
+  /* justify-content: space-evenly; */
+  position: relative;
+}
+
+.section-knowledge-desc{
+  width: 58%;
+  font-size: 0.9em;
+  /* position: relative; */
+}
+
+.project-dev, .project-design{
+  display: flex;
+  width: 60%;
+  height: 23%;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px 3px #e2e6e6;
+  line-height: 18px;
+  justify-content: left;
+  align-items: center;
+}
+
+.project-dev{
+  margin: 70px 20% 0 20%;
+}
+
+.project-design{
+  margin: 25px 20% 0 40%;
+  left:20%;
+  /* position: absolute; */
+}
+
+.project-dev-imageContainer, .project-design-imageContainer{
+  margin-left: 22px;
+  margin-right: 22px;
+}
+
+/* .section-knowledge-image{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 230px;
+} */
+
+.section-knowledge-image {
+  width: 25vw;
+  height: 25vw;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 58%;
+  top: 60%;
+  margin: 0;
+}
+
+.section-knowledge-image img{
+  width: 60%;
+}
+
+.about-me{
+  display: flex;
+  height: 300px;
+}
+
+.section-about-me-content{
+  /*justify-content: space-evenly;*/
+  /* width:100%; */
+  /* position: relative; */
+  /* left:120px; */
+  display: block;
+  width: 58%;
+}
+
+.section-about-me-content h2{
+  font-size: 40px;
+  /* margin:35px 0px; */
+  margin-left: 20%;
+  /* width: 100%; */
+}
+
+.about-me-desc{
+  border: 1px solid white;  
+  border-radius: 7px;
+  line-height: 30px;
+  padding: 2%;
+  margin-left: 20%;
+  box-shadow: 2px 4px 8px 3px #e2e6e6;
+}
+
+.portfolio{
+  display: flex;
+  height: auto;
+}
+
+.section-portfolio-right{
+  position: relative;
+}
+
+.section-portfolio-content h2{
+  font-size: 40px;
+  margin-left: 15%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.section-portfolio-content{
+  /* left:120px; */
+  /* position: relative; */
+  width: 80%;
+  margin-bottom: 10%;
+}
+
+.section-portfolio-projects{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15%;
+}
+
+.section-portfolio-image{
+  margin: 0px;
+  width: 43%;
+}
+
+.section-portfolio-image img{
+  width: 100%;
+}
+
+.final-bar{
+  height: 35px;
+  background-color: #e92042;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/*Media gueries*/
+@media screen and (max-width:1024px){
+  .project-dev, .project-design{
+    height: 25%;
+  }
+  .section-knowledge-desc h2{
+    margin: 6%;
+  }
+
+  .section-knowledge-desc p{
+    margin: 6%;
+  }
+
+  .project-dev-imageContainer, .project-design-imageContainer {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width:767px){
+  /* .hero{
+    height: 25%;
+  } */
+  .hero h1 {
+    font-size: 55px;
+    margin: 5% 5%;
+    line-height: 56px;
+  }
+
+  .section-hero-content {
+    text-align: center;
+  }
+
+  .section-hero-title {
+    width: 100%;
+  }
+
+  .section-hero-image {
+    left: 42%;
+    top: 74%;
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .section-hero-image img {
+    width: 40%;
+  }
+
+  .section-knowledge-desc{
+    width: 100%;
+    /* position: relative; */
+  }
+
+  .project-dev{
+    margin: 80px 10% 0 10%;
+  }
+  .project-design{
+    margin: 25px 10% 0 20%;
+  }
+  .project-dev, .project-design{
+    width: 70%;
+  }
+
+  .section-knowledge-image {
+    width: 22vw;
+    height: 22vw;
+    top: 80%;
+    left: 38%;
+  }
+  .section-about-me-content{
+    width: 100%;
+    padding-top: 9%;
+    font-size: 0.9em;
+  }
+
+  .section-about-me-content h2 {
+    margin: 35px 10%;
+    text-align: center;
+  }
+
+  .about-me-desc{
+    margin: 0 13%;
+    line-height: 25px;
+  }
+
+  .section-portfolio-content{
+    /* left:120px; */
+    /* position: relative; */
+    width: 100%;
+  }
+  .section-portfolio-content h2{
+    margin-left: 0;
+  }
+  .section-portfolio-image {
+    margin: 5% 29%;
+  }
+  .section-portfolio-projects {
+    display: block;
+    margin-left: 0;
+}
+  
+}
+
+@media screen and (max-width:480px){
+  /* .section-header-left {
+    height: auto;
+  } */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header ol {
+    display: block
+  }
+
+  .header li{
+    margin: 20px 25px;
+  }
+
+  .header a{
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .burger-button{
+    display: block;
+  }
+  .menu{
+    position: fixed;
+    background: rgba(233, 32, 66, .95);
+    z-index: 3;
+    top:0;
+    left: -100vw;
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-header-left {
+    align-items: center;
+}
+/* 
+  .hero{
+    height: 15%;
+  } */
+  .hero h1 {
+    font-size: 45px;
+    text-align: left;
+    line-height: 53px;
+  }
+
+  .section-hero-content {
+    /* display: block; */
+    /* position: initial; */
+    /* text-align: center; */
+  }
+
+  .section-hero-title {
+    width: 100%;
+  }
+
+  .section-hero-image {
+    left: 42%;
+    top: 89%;
+    /* width: 11vw;
+    height: 11vw; */
+  }
+
+  .section-hero-image img {
+    width: 50%;
+  }
+
+  .project-dev, .project-design {
+    width: 80%;
+  }
+
+  .project-design {
+    margin: 25px 10% 0 10%;
+  }
+
+  .project-dev-imageContainer, .project-design-imageContainer {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .section-knowledge-desc h2{
+    margin: 5%;
+    font-size: 20px;
+  }
+
+  .section-knowledge-desc p{
+    margin: 5%;
+    font-size: 13px;
+  }
+
+  .section-about-me-content {
+    padding-top: 0%;
+  }
+
+  .section-about-me-content h2 {
+    margin: 30px 10%;
+    font-size: 40px;
+  }
+
+  .about-me {
+    height: 250px;
+  }
+
+  .about-me-desc {
+    margin: 0 10%;
+    line-height: 22px;
+    font-size: 16px;
+  }
+  .section-portfolio-content h2{
+    font-size: 40px;
+  }
+  .section-portfolio-image {
+    margin: 5% 10%;
+    width: 80%;
+  }
+  .section-portfolio-content {
+
+    margin-bottom: 15%;
+}
+  .final-bar{
+    height: 25px;
+  }
+
+  .section-left{
+    width: 15%;
+  }
+  
+  .section-right{
+    width: 85%;
+  }
+  
+
+}
+
+@media screen and (max-width:320px){
+  /* .section-header-left {
+    height: 40px;
+  } */
+  /* .header {
+    height: 40px;
+  } */
+  .section-portfolio-image {
+    margin: 5% 20%;
+    width: 60%;
+  }
+}
+
